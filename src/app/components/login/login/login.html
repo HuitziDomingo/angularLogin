@@ -1,1 +1,11 @@
-<p>login works!</p>
+<div class="login-container">
+    <h2>Inicio de Sesion</h2>
+    <form action="">
+        <input type="text"/>
+        <button type="submit" (click)="onLogin()">Entrar</button>
+    </form>
+
+    @if(errorMessage()){
+        <p>Error de entrada</p>
+    }
+</div>
